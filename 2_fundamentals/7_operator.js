@@ -11,9 +11,10 @@ alert(s); // mystring
 
 /*
 Numeric conversion, unary +
-The plus + exists in two forms: the binary form that we used above and the unary form.
 
-The unary plus or, in other words, the plus operator + applied to a single value, doesn’t do anything to numbers. But if the operand is not a number, the unary plus converts it into a number.
+The plus + exists in two forms: the binary form that we used above and the unary form.
+The unary plus or, in other words, the plus operator + applied to a single value, doesn’t do anything to numbers.
+But if the operand is not a number, the unary plus converts it into a number.
 
 For example:
 */
@@ -48,15 +49,16 @@ Precedence	                    Name	            Sign
 …	                            …	                …
 3	                            assignment	        =
 …	                            …	                …
-As we can see, the “unary plus” has a priority of 16 which is higher than the 13 of “addition” (binary plus). That’s why, in the expression "+apples + +oranges", unary pluses work before the addition.
+As we can see, the “unary plus” has a priority of 16 which is higher than the 13 of “addition” (binary plus).
+That’s why, in the expression "+apples + +oranges", unary pluses work before the addition.
  */
 
 
 /*
 Assignment
 Let’s note that an assignment = is also an operator. It is listed in the precedence table with the very low priority of 3.
-
-That’s why, when we assign a variable, like x = 2 * 2 + 1, the calculations are done first and then the = is evaluated, storing the result in x.
+That’s why, when we assign a variable, like x = 2 * 2 + 1, the calculations are done first and then the = is evaluated,
+storing the result in x.
 */
 
 let x = 2 * 2 + 1;
@@ -78,8 +80,8 @@ alert( c ); // 4
 
 /*
 The assignment operator "=" returns a value
-An operator always returns a value. That’s obvious for most of them like addition + or multiplication *. But the assignment operator follows this rule too.
-
+An operator always returns a value. That’s obvious for most of them like addition + or multiplication *.
+But the assignment operator follows this rule too.
 The call x = value writes the value into x and then returns it.
 
 Here’s a demo that uses an assignment as part of a more complex expression:
@@ -95,9 +97,10 @@ alert( a ); // 3
 alert( c ); // 0
 
 /*
-In the example above, the result of (a = b + 1) is the value which is assigned to a (that is 3). It is then used to subtract from 3.
-
-Funny code, isn’t it? We should understand how it works, because sometimes we see it in 3rd-party libraries, but shouldn’t write anything like that ourselves. Such tricks definitely don’t make code clearer or readable.
+In the example above, the result of (a = b + 1) is the value which is assigned to a (that is 3).
+It is then used to subtract from 3.
+Funny code, isn’t it? We should understand how it works, because sometimes we see it in 3rd-party libraries,
+but shouldn’t write anything like that ourselves. Such tricks definitely don’t make code clearer or readable.
  */
 
 /*
@@ -182,7 +185,11 @@ NOT ( ~ )
 LEFT SHIFT ( << )
 RIGHT SHIFT ( >> )
 ZERO-FILL RIGHT SHIFT ( >>> )
-These operators are used very rarely. To understand them, we need to delve into low-level number representation and it would not be optimal to do that right now, especially since we won’t need them any time soon. If you’re curious, you can read the Bitwise Operators article on MDN. It would be more practical to do that when a real need arises.
+
+These operators are used very rarely. To understand them, we need to delve into low-level number representation
+and it would not be optimal to do that right now, especially since we won’t need them any time soon.
+If you’re curious, you can read the Bitwise Operators article on MDN. It would be more practical to do
+that when a real need arises.
 
 
  */
@@ -220,8 +227,10 @@ alert( n ); // 16  (right part evaluated first, same as n *= 8)
 
 
 /*Comma
-The comma operator , is one of the rarest and most unusual operators. Sometimes, it’s used to write shorter code, so we need to know it in order to understand what’s going on.
-The comma operator allows us to evaluate several expressions, dividing them with a comma ,. Each of them is evaluated but only the result of the last one is returned.
+The comma operator , is one of the rarest and most unusual operators. Sometimes, it’s used to write shorter code,
+so we need to know it in order to understand what’s going on.
+The comma operator allows us to evaluate several expressions, dividing them with a comma ,. Each of them is evaluated
+but only the result of the last one is returned.
 For example:
 */
 

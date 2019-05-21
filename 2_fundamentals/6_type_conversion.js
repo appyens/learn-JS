@@ -1,28 +1,33 @@
 /*
 SUMMARY
 =======
-The three most widely used type conversions are to string, to number, and to boolean.
+The three most widely used type conversions are
+    to string,
+    to number, and
+    to boolean.
 
-ToString – Occurs when we output something. Can be performed with String(value). The conversion to string is usually obvious for primitive values.
-
+ToString – Occurs when we output something. Can be performed with String(value).
+The conversion to string is usually obvious for primitive values.
 ToNumber – Occurs in math operations. Can be performed with Number(value).
 
 The conversion follows the rules:
 
-Value	Becomes…
-undefined	NaN
-null	0
-true / false	1 / 0
-string	The string is read “as is”, whitespaces from both sides are ignored. An empty string becomes 0. An error gives NaN.
-ToBoolean – Occurs in logical operations. Can be performed with Boolean(value).
+Value	                Becomes…
+undefined	            NaN
+null	                0
+true / false	        1 / 0
 
+string	The string is read “as is”, whitespaces from both sides are ignored. An empty string becomes 0.
+An error gives NaN.
+
+ToBoolean – Occurs in logical operations. Can be performed with Boolean(value).
 Follows the rules:
 
-Value	Becomes…
-0, null, undefined, NaN, ""	false
-any other value	true
-Most of these rules are easy to understand and memorize. The notable exceptions where people usually make mistakes are:
+Value	                            Becomes…
+0, null, undefined, NaN, ""	        false
+any other value	                    true
 
+Most of these rules are easy to understand and memorize. The notable exceptions where people usually make mistakes are:
 undefined is NaN as a number, not 0.
 "0" and space-only strings like " " are true as a boolean.
 
@@ -68,7 +73,8 @@ Value	            Becomes…
 undefined	        NaN
 null	            0
 true and false	    1 and 0
-string	            Whitespaces from the start and end are removed. If the remaining string is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN.
+string	            Whitespaces from the start and end are removed. If the remaining string is empty, the result is 0.
+                    Otherwise, the number is “read” from the string. An error gives NaN.
 
  */
 
@@ -83,8 +89,8 @@ Please note that null and undefined behave differently here: null becomes zero w
 
 /*
 Addition ‘+’ concatenates strings
-Almost all mathematical operations convert values to numbers. A notable exception is addition +. If one of the added values is a string, the other one is also converted to a string.
-
+Almost all mathematical operations convert values to numbers. A notable exception is addition +.
+If one of the added values is a string, the other one is also converted to a string.
 Then, it concatenates (joins) them:
  */
 
@@ -96,10 +102,9 @@ alert( '1' + 2 ); // '12' (string to the left)
 ToBoolean
 Boolean conversion is the simplest one.
 
-It happens in logical operations (later we’ll meet condition tests and other similar things) but can also be performed explicitly with a call to Boolean(value).
-
+It happens in logical operations (later we’ll meet condition tests and other similar things) but can also be
+performed explicitly with a call to Boolean(value).
 The conversion rule:
-
 Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false.
 Other values become true.
 For instance:

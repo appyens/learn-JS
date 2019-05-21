@@ -3,15 +3,17 @@
 /*
 There are 7 basic data types in JavaScript.
 
-number for numbers of any kind: integer or floating-point.
-string for strings. A string may have one or more characters, there’s no separate single-character type.
-boolean for true/false.
-null for unknown values – a standalone type that has a single value null.
-undefined for unassigned values – a standalone type that has a single value undefined.
-object for more complex data structures.
-symbol for unique identifiers.
-The typeof operator allows us to see which type is stored in a variable.
+number  for numbers of any kind: integer or floating-point.
+string  for strings. A string may have one or more characters, there’s no separate single-character type.
+boolean     for true/false.
+null    for unknown values – a standalone type that has a single value null.
+undefined   for unassigned values – a standalone type that has a single value undefined.
+object  for more complex data structures.
+symbol  for unique identifiers.
 
+
+//TYPEOF
+The typeof operator allows us to see which type is stored in a variable.
 Two forms: typeof x or typeof(x).
 Returns a string with the name of the type, like "string".
 For null returns "object" – this is an error in the language, it’s not actually an object.
@@ -38,7 +40,8 @@ alert(1/0);
 alert(Infinity);
 
 /*
-NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
+NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation,
+for instance:
  */
 
 alert("not a number" / 2);
@@ -60,12 +63,13 @@ let phrase = `can embed ${str}`;
 /*
 In JavaScript, there are 3 types of quotes.
 
-    Double quotes: "Hello".
-    Single quotes: 'Hello'.
-    Backticks: `Hello`.
+Double quotes: "Hello".
+Single quotes: 'Hello'.
+Backticks: `Hello`.
 
-    Double and single quotes are “simple” quotes. There’s no difference between them in JavaScript.
-    Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:
+Double and single quotes are “simple” quotes. There’s no difference between them in JavaScript.
+Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string
+by wrapping them in ${…}, for example:
 
  */
 
@@ -73,7 +77,12 @@ let name = "jhon";
 alert(`hello ${name}`);
 alert(`the result is ${1 + 2}`);
 
-// In some languages, there is a special “character” type for a single character. For example, in the C language and in Java it is char.
+/*
+In some languages, there is a special “character” type for a single character. For example,
+in the C language and in Java it is char.
+ */
+
+
 
 // BOOLEAN
 
@@ -118,10 +127,9 @@ alert(x); // "undefined"
 
 /*
 The typeof operator
-The typeof operator returns the type of the argument. It’s useful when we want to process values of different types differently or just want to do a quick check.
-
-    It supports two forms of syntax:
-
+The typeof operator returns the type of the argument. It’s useful when we want to process values of different
+types differently or just want to do a quick check.
+It supports two forms of syntax:
     As an operator: typeof x.
     As a function: typeof(x).
 
@@ -139,7 +147,12 @@ typeof alert // function
 /*
 The last three lines may need additional explanation:
 
-Math is a built-in object that provides mathematical operations. We will learn it in the chapter Numbers. Here, it serves just as an example of an object.
-The result of typeof null is "object". That’s wrong. It is an officially recognized error in typeof, kept for compatibility. Of course, null is not an object. It is a special value with a separate type of its own. So, again, this is an error in the language.
-The result of typeof alert is "function", because alert is a function of the language. We’ll study functions in the next chapters where we’ll see that there’s no special “function” type in JavaScript. Functions belong to the object type. But typeof treats them differently. Formally, it’s incorrect, but very convenient in practice.
+Math is a built-in object that provides mathematical operations. We will learn it in the chapter Numbers.
+Here, it serves just as an example of an object. The result of typeof null is "object". That’s wrong.
+It is an officially recognized error in typeof, kept for compatibility. Of course, null is not an object.
+It is a special value with a separate type of its own. So, again, this is an error in the language.
+The result of typeof alert is "function", because alert is a function of the language.
+We’ll study functions in the next chapters where we’ll see that there’s no special “function” type in JavaScript.
+Functions belong to the object type. But typeof treats them differently. Formally, it’s incorrect,
+but very convenient in practice.
  */
