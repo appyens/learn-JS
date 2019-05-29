@@ -134,3 +134,30 @@ if (userName == 'Admin') {
 }
 
 
+// Loops
+
+// even numbers from 2 to 10
+let x = 0;
+for (x = 0; x <= 10; x ++){
+    if (x % 2 == 0 ){
+        alert(x)
+    }
+}
+
+// change to while loop
+let y  = 0;
+while (y < 3){
+    alert(`number ${y}!`);
+    y++
+}
+
+flag =  true;
+while (flag) {
+    let input = Number(prompt("Enter number greater than 100: "));
+    if (!(input > 100)){
+        input = Number(prompt("Enter number greater than 100: "));
+    }
+    else if (!input){
+        flag = false;
+    }
+}
