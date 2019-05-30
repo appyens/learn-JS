@@ -151,13 +151,54 @@ while (y < 3){
     y++
 }
 
-flag =  true;
-while (flag) {
-    let input = Number(prompt("Enter number greater than 100: "));
-    if (!(input > 100)){
-        input = Number(prompt("Enter number greater than 100: "));
-    }
-    else if (!input){
-        flag = false;
-    }
+// Repeat until the input is correct
+let num;
+
+do {
+    num = prompt("Enter a number greater than 100?", 0);
+} while (num <= 100 && num);
+
+// Output prime numbers
+
+n = prompt("enter range for prime number: ");
+nextPrime:
+for (let i = 2; i <= n; i++){// for each i...
+   for (let j = 2; j < i; j++){ // look for a divisor...
+       if(i % j == 0){
+           continue nextPrime; // not a prime go next i
+       }
+       alert(i); // a prime
+   }
+
+}
+
+
+// switch
+
+let browser = prompt("Enter your favorite browser");
+if (browser == 'Edge'){
+    alert("You have got the edge")
+}else if (browser == 'Chrome' && "Firefox" &&  "Safari" && "Opera"){
+    alert("We support these browsers too!")
+}else{
+    alert("we hope that this page looks ok!")
+}
+
+
+let a = prompt("a????:");
+
+switch (+a) {
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert("2, 3");
+        break;
+    default:
+        alert("anything else")
+
 }
