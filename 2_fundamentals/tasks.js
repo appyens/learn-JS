@@ -202,3 +202,29 @@ switch (+a) {
         alert("anything else")
 
 }
+
+
+// functions
+
+function cheakAge(age) {
+    return (age > 18) ? true : confirm("Did parents allow you?");
+}
+
+function cheakAge(age) {
+    return (age > 18) || confirm("Did parents allow you?")
+}
+
+
+function minShow(a, b) {
+    return a < b ? a : b;
+}
+
+minShow(10, 5);
+
+
+function pow(x, n) {
+    return x ** n
+}
+
+pow(2, 2);
+pow(3, 2);
