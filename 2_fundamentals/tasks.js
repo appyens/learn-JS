@@ -228,3 +228,18 @@ function pow(x, n) {
 
 pow(2, 2);
 pow(3, 2);
+
+
+
+// Function_Expressions
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+}
+
+ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+);
