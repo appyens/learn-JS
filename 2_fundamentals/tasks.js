@@ -1,45 +1,45 @@
-// let admin;
-// let name;
-// name = 'Jhon';
-// admin = name;
-// alert(admin);
-//
-// // variables
-// let earth;
-// let currentUser;
-// const birthday = '18.04.1982';
-// const age = someCode(birthday);
-//
-// // data types
-// let name = "Ilya";
-// alert(`Hello ${1}`);
-// alert(`Hello ${"name"}`);
-// alert(`Hello ${name}`);
-//
-//
-// //operators
-// let a = 1, b = 1;
-// let c = ++a;
-// let d = b++;
-// alert(a);
-// alert(c);
-// alert(d);
+let admin;
+let name;
+name = 'Jhon';
+admin = name;
+alert(admin);
 
-// comparisons
-// alert(5 > 4);
-// alert("apple" > "pineapple");
-// alert("2" > "12");
-// alert(undefined == null);
-// alert(undefined === null);
-// alert(null == "\n0\n");
-// alert(null === +"\n0\n");
+// variables
+let earth;
+let currentUser;
+const birthday = '18.04.1982';
+const age = someCode(birthday);
 
-// interaction
+// data types
+let name = "Ilya";
+alert(`Hello ${1}`);
+alert(`Hello ${"name"}`);
+alert(`Hello ${name}`);
 
-// let name = prompt("Enter your name: ");
-// alert(name);
 
-// conditional_ope
+//operators
+let a = 1, b = 1;
+let c = ++a;
+let d = b++;
+alert(a);
+alert(c);
+alert(d);
+
+comparisons
+alert(5 > 4);
+alert("apple" > "pineapple");
+alert("2" > "12");
+alert(undefined == null);
+alert(undefined === null);
+alert(null == "\n0\n");
+alert(null === +"\n0\n");
+
+interaction
+
+let name = prompt("Enter your name: ");
+alert(name);
+
+conditional_ope
 
 // 1
 if ("0") {
