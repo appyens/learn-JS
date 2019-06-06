@@ -84,3 +84,12 @@ let menu = {
 multiplyNumeric(menu);
 alert(menu.width);
 alert(menu.height);
+
+// calculator
+
+let calculator = function () {
+    read(){
+        val1 = prompt("Enter first number: ");
+        val2 = prompt("enter second number");
+    }
+};
