@@ -52,6 +52,10 @@ The built-in function Math.random() creates a random value from 0 to 1 (not incl
 Write the function random(min, max) to generate a random floating-point number from min to max (not including max).
  */
 
+function random(min, max) {
+    result = Math.random(min, max);
+    return result;
+}
 
 
 // 3
@@ -62,3 +66,44 @@ Any number from the interval min..max must appear with the same probability.
 
 Examples of its work:
  */
+
+function randomInclude(min, max) {
+    result = Math.random(min, max + 1)
+    return result;
+}
+
+// strings tasks
+function ucFirst(str) {
+    return str[0].toUpperCase() + str.slice(1)
+
+}
+
+// checkspam
+function checkSpam(str) {
+    let lowerStr = str.toLowerCase();
+    return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+
+}
+
+checkSpam('buy ViAgRA now');
+checkSpam('free xxxxx');
+checkSpam("innocent rabbit");
+
+//truncate
+function truncate(str, maxlength) {
+    if ((str.length > maxlength)){
+        return str[maxlength - 1] + '...'
+    }
+    return str
+}
+
+truncate("What I'd like to tell on this topic is:", 20)
+
+truncate("Hi everyone!", 20);
+
+//extract the money
+function extractCurrencyValue(str) {
+    return +str.slice(1);
+}
+
+alert( extractCurrencyValue('$120') === 120 ); // true
