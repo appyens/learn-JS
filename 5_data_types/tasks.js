@@ -107,3 +107,42 @@ function extractCurrencyValue(str) {
 }
 
 alert( extractCurrencyValue('$120') === 120 ); // true
+
+// Array
+//create array
+let styles = ['Jazz', 'blues'];
+//push
+styles.push("Rock-n-Roll");
+alert(styles);
+// finding center and assigning value at
+styles[Math.floor(styles.length - 1) / 2] = 'Classics';
+// strip first value
+alert(styles[0]);
+// prepend values
+styles.unshift("Reggae");
+styles.unshift("Rap");
+alert(styles);
+
+// function
+function sumInput() {
+
+    let numbers = [];
+
+    while (true) {
+
+        let value = prompt("A number please?", 0);
+
+        // should we cancel?
+        if (value === "" || value === null || !isFinite(value)) break;
+
+        numbers.push(+value);
+    }
+
+    let sum = 0;
+    for (let number of numbers) {
+        sum += number;
+    }
+    return sum;
+}
+
+alert( sumInput() );
