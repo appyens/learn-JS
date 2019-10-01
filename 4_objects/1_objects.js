@@ -115,7 +115,7 @@ let user = {
 // For multiword properties, the dot access doesn’t work:
 
 // this would give a syntax error
-user.likes birds = true;
+// user.likes birds = true;
 
 /*
 That’s because the dot requires the key to be a valid variable identifier. That is: no spaces and other limitations.
@@ -475,9 +475,9 @@ const user = {
 };
 
 // Error (can't reassign user)
-user = {
-    name: "Pete"
-};
+// user = {
+//     name: "Pete"
+// };
 
 
 /*
@@ -516,7 +516,7 @@ Also we can use the method Object.assign for that.
 The syntax is:
 
  */
-Object.assign(dest, [src1, src2, src3...])
+Object.assign(dest, [src1, src2, src3])
 
 /*
 Arguments dest, and src1, ..., srcN (can be as many as needed) are objects.
