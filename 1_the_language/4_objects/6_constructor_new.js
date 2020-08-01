@@ -48,6 +48,7 @@ function User(name) {
     // add properties to this
     this.name = name;
     this.isAdmin = false;
+list
 
     // return this;  (implicitly)
 }
