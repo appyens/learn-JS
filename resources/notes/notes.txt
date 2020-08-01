@@ -1,2 +1,3 @@
 object methods advance part remaining
 constructor_new advanced part remaining
+https://javascript.info/
